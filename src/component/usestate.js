@@ -1,4 +1,3 @@
-import { logDOM } from "@testing-library/react";
 import React, { useState } from "react";
 import "../style.css";
 
@@ -25,8 +24,7 @@ function State(props) {
     return date;
   }
   const [searchvalue, setsearchnote] = useState("");
-  const finalnote = () => {};
-
+  ``
   return (
     <>
       <input
@@ -46,7 +44,7 @@ function State(props) {
       />
 
       <div className="box">
-        {searchvalue == ""
+        {searchvalue === ""
           ? notes.map((note, index) => {
               return (
                 <div className="note-box" key={index}>
